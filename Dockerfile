@@ -1,4 +1,2 @@
-FROM tomcat:latest
-RUN cp -R  /usr/local/tomcat/webapps.dist/*  /usr/local/tomcat/webapps
+FROM tomcat:9.0.8-jre8-alpine
 COPY ./*.war /usr/local/tomcat/webapps
-
